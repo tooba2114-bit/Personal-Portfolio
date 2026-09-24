@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tooba Shahid | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">My Portfolio</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>Hi, I'm Tooba Shahid</h1>
+
+<p>
+Frontend Web Developer | HTML | CSS | JavaScript
+</p>
+
+<a href="#projects" class="btn">View My Projects</a>
+
+</section>
+
+<section id="about" class="section reveal">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate Web Developer who enjoys creating responsive and
+user-friendly websites. I have experience building projects using
+HTML, CSS and JavaScript and continuously improving my skills.
+</p>
+
+</section>
+
+<section id="skills" class="section reveal">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">GitHub</div>
+<div class="skill">LinkedIn</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="section reveal">
+
+<h2>My Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+<h3>Calculator App</h3>
+<p>
+A calculator application developed using HTML, CSS and JavaScript.
+</p>
+
+<a href="https://tooba2114-bit.github.io/Calculator/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>Image Gallery</h3>
+<p>
+Responsive image gallery with modern layout and hover effects.
+</p>
+
+<a href="https://tooba2114-bit.github.io/Image-Gallery/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>Portfolio Website</h3>
+<p>
+Personal portfolio website showcasing skills and projects.
+</p>
+
+</div>
+
+<div class="project-card">
+<h3>Music Player</h3>
+<p>
+A simple music player with play, pause and track controls.
+Designed with a clean and interactive interface.
+</p>
+
+</div>
+
+<div class="project-card">
+<h3>MediAi</h3>
+<p>
+An AI-powered symptom checker designed to provide basic health-related guidance.
+Built with an interactive user-friendly interface.
+</p>
+
+</div>
+
+<div class="project-card">
+<h3>Rapid Fire</h3>
+<p>
+A fast-paced game featuring real-life questions and quick decisions.
+Test your choices against the clock.
+</p>
+
+<a href="https://tooba2114-bit.github.io/Rapid-Fire/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>Sakoon</h3>
+<p>
+A peaceful reflection website based on moods, Quranic reminders and Duas.
+Discover a thoughtful quote and activity for every mood.
+</p>
+
+<a href="https://tooba2114-bit.github.io/Sakoon/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>ChoiceCraft</h3>
+<p>
+An interactive game based on everyday situations and personal choices.
+Discover your unique decision-making style.
+</p>
+
+<a href="https://tooba2114-bit.github.io/ChoiceCraft/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>Brain.sxe</h3>
+<p>
+A fun interactive prank website built with HTML, CSS, and JavaScript.
+</p>
+
+<a href="https://tooba2114-bit.github.io/Brain.exe/" target="_blank" class="btn">
+View Project
+</a>
+</div>
+</div>
+
+
+</section>
+
+<section id="contact" class="section reveal contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: stooba703@gmail.com</p>
+<p>Phone no: +92 331 8890888</p>
+
+<div class="social-links">
+
+<a href="https://www.linkedin.com/in/tooba-shahid-51b261410/" target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/tooba3957-bit" target="_blank">
+GitHub
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Tooba Shahid | All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll", reveal);
+
+function reveal(){
+
+let reveals = document.querySelectorAll(".reveal");
+
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight = window.innerHeight;
+let revealTop = reveals[i].getBoundingClientRect().top;
+let revealPoint = 100;
+
+if(revealTop < windowHeight - revealPoint){
+reveals[i].classList.add("active");
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
